@@ -18,14 +18,14 @@
  *
  * @example
  *    const p1 = willYouMarryMe(true);
- *    p1.then(answer => console.log(answer)) // 'Hooray!!! She said "Yes"!'
+ *    p1.then(answer => conddd(answer)) // 'Hooray!!! She said "Yes"!'
  *
  *    const p2 = willYouMarryMe(false);
- *    p2.then(answer => console.log(answer)) // 'Oh no, she said "No".';
+ *    p2.then(answer => conddd(answer)) // 'Oh no, she said "No".';
  *
  *    const p3 = willYouMarryMe();
- *    p3.then(answer => console.log(answer))
- *      .catch((error) => console.log(error.message)) // 'Error: Wrong parameter is passed!
+ *    p3.then(answer => conddd(answer))
+ *      .catch((error) => conddd(error.message)) // 'Error: Wrong parameter is passed!
  *                                                    //  Ask her again.';
  */
 function willYouMarryMe(isPositiveAnswer) {
@@ -52,7 +52,7 @@ function willYouMarryMe(isPositiveAnswer) {
  *    const promises = [Promise.resolve(1), Promise.resolve(3), Promise.resolve(12)]
  *    const p = processAllPromises(promises);
  *    p.then((res) => {
- *      console.log(res) // => [1, 2, 3]
+ *      conddd(res) // => [1, 2, 3]
  *    })
  *
  */
@@ -79,7 +79,7 @@ function processAllPromises(array) {
  *    ];
  *    const p = processAllPromises(promises);
  *    p.then((res) => {
- *      console.log(res) // => [first]
+ *      conddd(res) // => [first]
  *    })
  *
  */
@@ -100,7 +100,7 @@ function getFastestPromise(array) {
  *    const promises = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
  *    const p = chainPromises(promises, (a, b) => a + b);
  *    p.then((res) => {
- *      console.log(res) // => 6
+ *      conddd(res) // => 6
  *    });
  *
  */
