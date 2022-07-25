@@ -125,7 +125,7 @@ function noMulti() {
 class Selector {
   constructor() {
     this.currentNumber = 0;
-    this.hasElementName = false;
+    this.hasTag = false;
     this.hasID = false;
     this.hasPseudoElement = false;
     this.units = [];
@@ -133,9 +133,9 @@ class Selector {
 
   element(value) {
     if (this.currentNumber > 0) wrongOrder();
-    if (this.hasElementName === true) noMulti();
+    if (this.hasTag === true) noMulti();
     this.currentNumber = 0;
-    this.hasElementName = true;
+    this.hasTag = true;
     this.units.push(`${value}`);
     return this;
   }
