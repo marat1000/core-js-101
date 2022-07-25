@@ -57,11 +57,12 @@ function willYouMarryMe(isPositiveAnswer) {
  *
  */
 function processAllPromises(array) {
-  const res = [];
-  array.map((prom) => prom.then((result) => res.push(result)));
-  return new Promise((resolve1) => {
-    resolve1(res);
-  });
+  return Promise.all(array);
+  // const res = [];
+  // array.map((prom) => prom.then((result) => res.push(result)));
+  // return new Promise((resolve1) => {
+  //   resolve1(res);
+  // });
 }
 
 /**
