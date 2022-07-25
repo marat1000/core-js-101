@@ -245,7 +245,7 @@ function encodeToRot13(str) {
 /**
  * Returns true if the value is string; otherwise false.
  * @param {string} value
- * @return {boolean}
+ * @return {bool}
  *
  * @example
  *   isString() => false
